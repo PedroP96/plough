@@ -1,0 +1,954 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0;
+}
+
+html, body {
+ height: 100%;
+ width: 100%;
+ background-color: #ADADAD;
+ overflow-x: hidden;
+}
+
+/*Actual content container. Removes the sides of the screen*/
+.mainContainer {
+	width: 80%;
+	min-height: 100%;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	margin-bottom: -50px;
+	overflow: hidden;
+}
+
+/*Header that contais image,login link and navbar*/
+.header{
+	background-color: #FFFFFF;
+	padding-bottom: 50px;
+}
+
+a:visited{
+	color: #0000EE;
+}
+
+.mainContent {
+	padding-bottom: 100px;
+}
+
+.pageTitle {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#homepageMain {
+	height: 1150px;
+}
+
+.footer{
+	width: 80.04%;
+	margin: 0 auto;
+	height: 50px;
+	background-color: #D3D3D3;
+	display: table;
+	position: relative;
+	margin-top: -50px;
+	overflow: auto;
+}
+
+.footerContent {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 45%;
+	font-size: 17px;
+}
+
+#logo{
+	vertical-align: middle;
+}
+
+#loginLink, #logoutLink {
+	display: box;
+	margin-left: 80%;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/*Navigation bar*/
+.secondRow{
+	background-color: #D3D3D3;
+	overflow: hidden;
+}
+
+/*Links in navigation bar*/
+.menuLinks, .adminText {
+  float: left;
+  display: block;
+  color: #000000;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/*Change colour when hover over the links*/
+.menuLinks:hover, .adminLinks:hover {
+  background-color: #DDDDDD;
+  color: #000000;
+}
+
+.secondRow a:visited {
+	color: #000000;
+}
+
+/*Search box*/
+#searchInput{
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 15px;
+  margin-right: 15px;
+  font-size: 17px;
+}
+
+#basket{
+	float: right;
+	padding: 6px;
+	margin-top: 10px;
+	margin-right: 30px;
+}
+
+.TermsConditions h2 , .PrivacyPolicy h2, .TermsConditions h3, .PrivacyPolicy h3, .TermsConditions p, .PrivacyPolicy p {
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+}
+
+.TermsConditions ul {
+	margin-left: 70px;
+}
+
+#firstBox {
+	float: left;
+	margin-right: 5%;
+    background-color: #838383;
+  	width: 20%;
+  	padding: 10px;
+	height: 274px;
+	overflow:auto;
+}
+
+#secondBox {
+	width: 20%;
+    float: left;
+    padding: 10px;
+    background-color: #838383;
+	height: 274px;
+	overflow: auto;
+}
+
+#loginRegisterBoxes {
+	position: relative;
+	width: 100%;
+	margin-top: 10%;
+	margin-left: 25%;
+	overflow: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+
+#firstBox  input[type=email], #firstBox input[type=password]{
+  width: 100%;
+  padding: 12px 18px;
+  margin: 7.5px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#firstBox h2{
+  text-align: center;
+  overflow: auto;
+}
+
+#firstBox button, #secondBox button{
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#secondBox  button{
+	position: relative;
+	top:80px;
+}
+
+#secondBox h2 {
+	text-align: center;
+	overflow: auto;
+}
+
+#secondBox ul, #secondBox p {
+	padding-left: 40px;
+	overflow: auto;
+}
+
+/*Register page*/
+#RegisterBox {
+	width: 40%;
+	height: 670px;
+	background-color: #838383;
+	margin-left: 30%;
+	font-size: 17px;
+	overflow: auto;
+}
+
+#RegisterBox h2, #RegisterBox #register_message {
+	text-align: center;
+}
+
+#RegisterBox form {
+	margin-left: 30px;
+}
+
+#RegisterBox input {
+	width: 94%;
+	border: none;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+#RegisterBox label{
+	font-size: 17px;
+}
+
+#RegisterBox button{
+	width: 40%;
+	padding: 10px;
+	margin-left: 5%;
+	margin-bottom: 10px;
+	overflow: auto;
+}
+
+/*Forgotten Password*/
+#forgottenPass_container {
+	width: 40%;
+	height: 210px;
+	background-color: #838383;
+	margin-left: 30%;
+	padding: 10px;
+	margin-top:10%;
+}
+
+#forgottenPass_container  input[type=email]{
+  width: 100%;
+  padding: 12px 18px;
+  margin: 7.5px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#forgottenPass_container button {
+	width: 40%;
+	float: left;
+	padding: 12px;
+	margin-left: 6.5%;
+	margin-top: 1%;
+}
+
+/*Admin Homepage*/
+.adminLinks {
+	float: right;
+ 	display: block;
+  	color: #000000;
+  	padding: 20px 16px;
+  	text-decoration: none;
+  	font-size: 20px;
+}
+
+#usersTable, #usersTable td, #usersTable th, #adminStock_table, #adminStock_table td, #adminStock_table th, #adminReport_Sales_table,
+#adminReport_Sales_table td, #adminReport_Sales_table th, #adminReport_Wastage_table, #adminReport_Wastage_table td, #adminReport_Wastage_table th,
+#adminReport_Trending_table, #adminReport_Trending_table th, #adminReport_Trending_table td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	overflow: hidden;
+}
+#adminReport_overallSales_table th, #adminReport_overallSales_table td, #adminReport_overallWastage_table th, #adminReport_overallWastage_table td,
+#adminReport_bestSeller_table th, #adminReport_bestSeller_table td{
+	padding: 5px;
+	text-align: center;
+}
+#usersTable_container, #adminStock_container, #adminReport_Sales_container, #adminReport_overallSales_container, #adminReport_overallWastage_container, #adminReport_Wastage_container, #adminReport_bestSeller_container, #adminReport_Trending_container{
+	width: 100%;	
+	overflow: auto;
+}
+
+#adminStock_table, #adminReport_Sales_table, #adminReport_overallSales_table, #adminReport_overallWastage_table, #adminReport_Wastage_table,
+#adminReport_bestSeller_table, #adminReport_Trending_table{
+    table-layout: fixed;
+    border-collapse: collapse;
+	margin: 0 auto;
+}
+
+#adminStock_table tbody, #adminReport_Sales_table tbody, #adminReport_Wastage_table tbody, #adminReport_Trending_table tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 291px;
+}
+
+#adminStock_table tr, #adminReport_Sales_table tr, #adminReport_Wastage_table tr, #adminReport_Trending_table tr {
+   display: block;
+}
+
+#adminStock_table thead, #adminReport_Sales_table thead, #adminReport_Wastage_table thead, #adminReport_Trending_table thead {
+  background: #D3D3D3;
+  color:#00000;
+}
+
+#usersTable{
+	width:90%;
+    border-collapse: collapse;
+	margin: 0 auto;
+}
+
+#usersTable th {
+  background: #D3D3D3;
+  color: #000000;
+  width: auto;
+}
+
+#usersTable tbody{
+	width: 100%;
+	overflow: auto;
+}
+
+#usersTable td,#adminReport_Wastage_table th, #adminReport_Wastage_table td {
+  padding: 5px;
+  text-align: left;
+  width: 110px;
+}
+#usersTable th, #adminStock_table th, #adminStock_table td, #adminReport_Sales_table th, #adminReport_Sales_table td, #adminReport_Trending_table td, #adminReport_Trending_table th {
+  padding: 5px;
+  text-align: left;
+  width: 120px;
+}
+
+#usersTable th, #adminStock_table th {
+	text-align: center;
+}
+
+#adminHome_buttons, #adminStock_buttons {
+	background-color: #D3D3D3;
+	width: 22%;
+	height: 110px;
+	margin: 0 auto;
+	margin-top: 10px;
+	overflow: auto;
+}
+
+#admin_editUsers input{
+	width: 74%;
+	margin-top: 10px;
+	margin-left: 1px;
+}
+#admin_editUsers label{
+	text-align: center;
+	margin-left: 5px;
+}
+
+#adminStock_buttons input[type=number] {
+	width: 67%;
+	margin-top: 10px;
+}
+
+#adminHome_buttons label {
+	margin-left: 3px;
+	overflow: auto;
+}
+
+
+#adminStock_buttons label {
+	margin-left: 6px;
+	overflow: auto;
+}
+
+#admin_editUsers button {
+	height: 50px;
+	width: 40%;
+	margin-top: 17px;
+	margin-left: 6.2%;
+	margin-bottom: 10px;
+	overflow: auto;
+}
+
+#adminStock_buttons input[type=submit] {
+	height: 50px;
+	width: 45%;
+	margin-top: 10px;
+	margin-left: 9px;
+}
+
+#adminReport_overallSales_container h2 , #adminReport_overallWastage_container h2, #adminReport_bestSeller_container h2{
+	text-align: center;
+}
+
+/*Admin Home Edit table*/
+#adminHome_userEdit_container, #adminHome_userAdd_container {
+	width: 100%;
+	overflow: auto;
+	margin-top: 10px;
+}
+
+#adminHome_userEdit_container button {
+	width: 10%;
+	margin-left: 45%;
+}
+
+#adminHome_adduser {
+	width: 10%;
+	margin-left: 45%;
+	margin-top: 1%;
+	height: 50px;
+}
+
+#adminHome_userEdit_table, #adminHome_userAdd_table {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#adminHome_userEdit_table th, #adminHome_userAdd_table th, #adminReport_overallSales_table th, #adminReport_overallWastage_table th, 
+#adminReport_bestSeller_container th {
+	background: #D3D3D3;
+}
+
+#adminHome_userEdit_table input, #adminHome_userAdd_table input {
+	width: 100%;
+}
+
+
+#adminHome_userEdit_table, #adminHome_userEdit_table th, #adminHome_userEdit_table td, #adminHome_userAdd_table, #adminHome_userAdd_table th,
+#adminHome_userAdd_table td, #adminReport_overallSales_table, #adminReport_overallSales_table th, #adminReport_overallSales_table td, #adminReport_overallSales_table th, #adminReport_overallWastage_table, #adminReport_overallWastage_table th, #adminReport_overallWastage_table td, #adminReport_bestSeller_table, #adminReport_bestSeller_table th, #adminReport_bestSeller_table td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	overflow: hidden;
+}
+
+#adminHome_userEdit_button input, #adminHome_userAdd_button input{
+	margin-left: 48%;
+	height: 50px;
+	width: 5%;
+	margin-top: 10px;
+}
+
+/*Admin Report*/
+#reportButtons_container {
+	width:50%;
+	margin-left: 30%;
+	margin-top: 15%;
+}
+
+#reportButtons_container button {
+	height: 80px;
+	width: 20%;
+}
+
+/*Veg and Fruit*/
+.columns {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+}
+
+.filtersColumn {
+	position: relative;
+	float: left;
+  	width: 14%;
+  	padding: 10px;
+	overflow:auto;
+}
+
+.productsColumn {
+	float: left;
+	width: 76%;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #000000;
+	display: table;
+}
+
+.productsTable {
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	border-spacing: 20px;
+}
+
+.productsTable input {
+	width: 45%;
+}
+
+.productsTable td {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.sortColumn {
+	float: right;
+  	width: 15%;
+	overflow:hidden;
+	min-height: 300px;
+}
+
+#filterTitle {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.filters {
+	display: block;
+	font-size: 23px;
+	margin-left: 60px;
+	text-decoration: none;
+}
+
+.filtersColumn a{
+	color: black;
+}
+
+
+#dealsTitle {
+	text-align: center;
+}
+
+/*Sort By button*/
+.dropbtn {
+  background-color: #D3D3D3;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #9D9D9D;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 70px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.show {display:block;}
+
+/*Homepage*/
+#aboutUs_firstRow {
+	margin: 0 auto;
+	min-height: 200px;
+	text-align: justify;
+	padding: 10px;
+	font-size: 21px;
+}
+
+#aboutUs_firstRow img {
+	float: right;
+	height: 200px;
+	margin-left: 10px;
+	
+}
+
+#aboutUs_firstRow p {
+	margin-top: 35px;
+	
+}
+#aboutUs_secondRow {
+	margin: 0 auto;
+	min-height: 100px;
+	margin-top: 25px;
+	padding: 10px;
+}
+
+.homepage_heading {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 27px;
+}
+
+#homepage_heading1 {
+	margin-bottom: 10px;
+	font-size: 27px;
+	margin-left: 10px;
+}
+
+#aboutUs_container {
+	width: 80%;
+	margin: 0 auto;
+	word-wrap: break-word;
+}
+#aboutUs_secondRow img {
+	float: left;
+	height: 200px;
+	width: 255px;
+	margin-right: 10px;
+	margin-top: -10px;
+}
+
+#aboutUs_secondRow p {
+	margin-top:35px;
+	text-align: justify;
+	font-size: 21px;
+}
+
+#howItWorks_container {
+	width:80%;
+	margin: 0 auto;
+	height: 100px;
+	margin-top: 50px;
+}
+
+.howItWorks_column {
+	margin-top: 20px;
+	float:left;
+	width: 33%;
+	text-align: center;
+}
+
+.howItWorks_column h3 {
+	margin-bottom: 40px;
+}
+.howItWorks_column img {
+	height: 100px;
+	width: 100px;
+}
+
+#offers_Container {
+	width:80%;
+	margin: 0 auto;
+	height: 100px;
+	margin-top: 50px;
+}
+
+.offers_column {
+	margin-top: 20px;
+	float:left;
+	width: 33.3%;
+	text-align: center;
+	position: relative;
+}
+
+.offers_column a{
+	color: #000000;
+}
+
+.offers_column img {
+	height: 280px;
+	width: 320px;
+}
+
+.offers_column_text {
+	background: #FFFFFF;
+	opacity: 0.8;
+	width: 30%;
+	margin-top: -20px;
+	position: absolute;
+	left: 140px;
+	top: 260px;
+	font-size: 22px;
+	font-weight: bold; 
+	border: 1px solid;
+}
+
+/*Contact Us*/
+
+#contactUs_container {
+	margin-left: 21%;;
+	margin-top: 5%;
+}
+
+#contactUs_firstColumn {
+	float: left;
+    background-color: #838383;
+  	width: 35%;
+  	padding: 10px;
+	height: 320px;
+	overflow:auto;
+	padding-top: 90px;
+}
+
+#contactUs_secondColumn {
+	width: 35%;
+    float: left;
+    padding: 10px;
+    background-color: #838383;
+	height: 400px;
+	overflow: auto;
+}
+
+#contactUs_firstColumn  input[type=email], #contactUs_firstColumn input[type=text]{
+  width: 100%;
+  padding: 12px 18px;
+  margin: 7.5px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#contactUs_secondColumn label{
+	font-size: 17px;
+}
+
+#TextArea {
+	width: 98%;
+	height: 300px;
+	margin-top: 10px;
+	font-size: 17px;
+}
+
+#contactUs_secondColumn button{
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/*Account Button*/
+#accountButton {
+	float: right;
+	margin-right: 60px;
+	margin-top: 40px;
+}
+
+/*Product Details*/
+.product_container {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 2%; 
+	margin-bottom: 50px;
+	margin-top: -10px;
+}
+
+.productImage img{
+	height: 300px; 
+	width: 300px; 
+	float:left; 
+	margin-left: 15%;
+}
+.productImage{
+	background-color: #D3D3D3;
+}
+
+.productInfo h3 { 
+	margin-top: 20px;
+}
+
+.productInfo {
+	float: right;
+	margin-right: 35%;
+}
+
+.productInfo input {
+		width: 40%;
+	margin-left: 6.1%;
+	padding: 8px;
+	margin-bottom: 10px;
+	overflow: auto;
+}
+
+.addtoBasket_button{
+	height: 50px;
+	background-color: #d3d3d3;
+}
+
+#product_qty {
+	float: right;
+	margin-right: 39%;
+	margin-top: -2.5%;
+}
+
+#add_button{
+	margin-left: 50%;
+	float: left;
+	margin-right: 5px;
+}
+
+.productName {
+	margin-bottom: 100px;
+	margin-left: -90px;
+	text-align: center;
+}
+
+/*Basket*/
+.basketButtons{
+	margin-left:45%;
+	margin-top: 10px;
+}
+
+#basketTable_container{
+	margin: 0 auto;
+}
+
+/*Checkout*/
+#checkoutContainer {
+	background-color: #D3D3D3;
+	width: 80%;
+	margin: 0 auto;
+	height: 632px;
+}
+
+#checkout_fields  input, #checkout_fields label {
+	width: 100%;
+	font-size: 17px;
+	margin-bottom: 6px;
+}
+
+
+#checkout_fieldsBox, #checkout_fields {
+	padding: 10px;
+}
+
+#checkout_fieldsBox {
+	width: 47.5%;
+	float: left;
+}
+
+#checkout_buttons input[type=submit]{
+	width: 40%;
+	margin-left: 6.1%;
+	padding: 8px;
+	margin-bottom: 10px;
+	overflow: auto;
+}
+
+#checkout_buttons{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#checkout_basket {
+	padding: 10px;
+}
+
+#checkout_basketTable {
+   overflow-y:auto;
+   height:83%;
+   display:block;
+   text-align: center;
+}
+
+#checkout_basketTable{
+	border: 1px solid black;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+#checkout_basketTable tr {
+	border-bottom: 1px solid black;
+}
+.checkout_tableFields{
+		padding-left: 200px;
+}
+
+#checkout_values {
+	
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#checkout_finalPrice {
+	font-size: 26px;
+}
+
+/*Payment Successful*/
+#payment_container {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#payment_container img {
+	width: 40%;
+}
+
+#payment_container p {
+	font-size: 20px;
+}
+
+/*User Details Page*/
+#linksSidebar{
+	height: 500px;
+	width: 20%;
+	margin-left: 75px;
+	background-color: #838383;
+	float: left;
+}
+
+#linksSidebar a{
+	font-size: 20px;
+	margin-bottom: 10px;
+	display: block;
+	font-size: 23px;
+	margin-left: 24px;
+}
+
+.userBoxes {
+	background-color: #838383;
+	float: left;
+	margin-top: -500px;
+}
+
+#userAccount{
+	text-decoration: underline;
+	text-align: center;
+}
+
+/*User Order*/
+#usersOrders_table {
+	float: left;
+	margin-top: -500px;
+	margin-left: 500px; 
+}
+
+#user-order-buttons {
+	margin-left: 40%;
+	margin-top: -10%;
+}
+
+/*admin stock page*/
+#admin-user-buttons{
+	background-color: #D3D3D3;
+	width: 20%;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+#adminReport_overallSales_table{
+	margin-bottom: 15px;
+}
+
+#adminReport_overallSales_h2{
+	margin-left: 4%;
+}
